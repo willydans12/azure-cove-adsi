@@ -1,0 +1,198 @@
+/* Base */
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+  }
+  
+  /* Hero */
+  .hero {
+    height: 60vh;
+    background: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1920&q=80") center/cover no-repeat;
+  }
+  /* hilangkan overlay hitam */
+  
+  /* Navbar */
+  .navbar {
+    background: transparent !important;
+    z-index: 10;
+  }
+  .nav-link,
+  .navbar-brand {
+    color: #fff !important;
+    transition: color 0.2s;
+  }
+  .nav-link:hover {
+    color: #007bff !important;
+  }
+  
+  /* Booking */
+  .booking {
+    background: #ddd;
+  }
+  .booking .form-control,
+  .booking .dropdown-toggle {
+    border-radius: 0;
+    box-shadow: none;
+    border: 1px solid #ccc;
+    background: #fff;
+  }
+  .booking label {
+    font-style: italic;
+    color: #333;
+  }
+  
+  /* Select rooms */
+  .select-rooms h4 {
+    font-weight: 500;
+  }
+  .select-rooms .card {
+    border: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  /* Welcome */
+  .welcome {
+    background: url("https://images.unsplash.com/photo-1526778548025-fa2f459cd5c0?auto=format&fit=crop&w=1920&q=80") center/cover no-repeat;
+  }
+  .welcome h2 {
+    margin-bottom: 1rem;
+  }
+  .welcome p {
+    line-height: 1.6;
+    max-width: 650px;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #87b5dd;
+  }
+  .footer h6 {
+    font-weight: 600;
+  }
+  .footer a {
+    font-size: 1.2rem;
+  }
+  /* Features Cards Section */
+  .features {
+    position: relative;
+    padding: 5rem 0;
+    background: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1920&q=80")
+                center/cover no-repeat;
+  }
+  /* About Us */
+  .about-us-hero {
+    background: url("/mnt/data/f8394286-ea79-4622-8db6-c47427c16474.png") center/cover no-repeat;
+    height: 300px;
+    position: relative;
+  }
+  
+  .about-us-title {
+    position: absolute;
+    bottom: -20px;
+    left: 15px;
+    border-left: 5px solid #007bff;
+  }
+  
+  .about-us-content {
+    background-color: #f8f9fa;
+  }
+  
+  .about-us-content h3 {
+    border-left: 4px solid #007bff;
+    padding-left: 12px;
+  }
+/* Activities Page */
+.activities-page {
+    background-color: #f8f9fa;
+  }
+  .activity-title-box {
+    border-left: 5px solid #007bff;
+  }
+  .activity-desc-box {
+    border-left: 5px solid #007bff;
+  }
+  .activity-desc-box p {
+    line-height: 1.6;
+  }
+  .ratio img {
+    object-fit: cover;
+  }
+/* overlay hover */
+/* hover overlay */
+.gallery-item .overlay {
+    background-color: rgba(255,255,255,0.95);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+  }
+  .gallery-item:hover .overlay {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  /* hover overlay */
+  .gallery-item .overlay {
+    background-color: rgba(255,255,255,0.95);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+  }
+  .gallery-item:hover .overlay {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .gallery-item img {
+    object-fit: cover;
+  }
+
+  /* Lightbox dasar */
+  #lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1050;
+  }
+  #lightbox.d-none {
+    display: none;
+  }
+  .lightbox-content {
+    background: #fff;
+    max-width: 800px;
+    width: 90%;
+    padding: 1.5rem;
+    position: relative;
+    border-radius: .5rem;
+  }
+  .btn-close-lightbox {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    background: none;
+    border: none;
+    font-size: 1rem;
+  }
+  .lightbox-body {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .lb-image {
+    flex: 1 1 50%;
+  }
+  .lb-image img {
+    width: 100%;
+    max-height: 60vh;
+    object-fit: cover;
+    border-radius: .25rem;
+  }
+  .lb-info {
+    flex: 1 1 50%;
+    padding-left: 1rem;
+  }
+      
+    

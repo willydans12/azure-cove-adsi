@@ -1,0 +1,182 @@
+/* home.css */
+
+/* Base */
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+  }
+  
+  /* Hero */
+  .hero {
+    height: 60vh;
+    background: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1920&q=80") center/cover no-repeat;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background: transparent !important;
+    z-index: 10;
+  }
+  .nav-link,
+  .navbar-brand {
+    color: #fff !important;
+    transition: color 0.2s;
+  }
+  .nav-link:hover {
+    color: #007bff !important;
+  }
+  
+  /* Booking Section */
+  .booking {
+    background: #f1f1f1;
+  }
+  .booking-form {
+    border-radius: 0;
+  }
+  .booking .form-control,
+  .booking .dropdown-toggle {
+    border-radius: 0;
+    box-shadow: none;
+    border: 1px solid #ccc;
+    background: #fff;
+  }
+  .booking label {
+    font-style: italic;
+    color: #333;
+  }
+  
+  /* Select Rooms */
+  .select-rooms {
+    background: #f1f1f1;
+  }
+  .select-rooms h3 {
+    font-weight: 500;
+    color: #333;
+  }
+  
+  /* Room Card */
+  .room-card {
+    border: 1px solid #e0e0e0;
+    background: #fff;
+  }
+  .room-card h5 {
+    color: #222;
+  }
+  .room-card p {
+    color: #555;
+  }
+  
+  /* Reservation Sidebar */
+  .reservation {
+    background: #f9f9f9;
+    border: 1px solid #e0e0e0;
+  }
+  .reservation h5 {
+    color: #333;
+  }
+  .reservation dt {
+    font-weight: 600;
+  }
+  .reservation dd {
+    margin-bottom: 0.75rem;
+  }
+  .reservation hr {
+    border-color: #ddd;
+  }
+  .reservation .btn[disabled] {
+    opacity: 0.6;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #87b5dd;
+  }
+  .footer h6 {
+    font-weight: 600;
+  }
+  .footer a {
+    font-size: 1.2rem;
+  }
+  
+  /* Utilities */
+  .fst-italic { font-style: italic; }
+  .fst-normal { font-style: normal; }
+  /* Make modal lebar dan header “bersih” */
+.modal-dialog {
+    max-width: 90%;
+    margin: 1.5rem auto;
+  }
+  .modal-content {
+    border: none;
+    border-radius: 0;
+  }
+  .modal-body h4 {
+    font-weight: 500;
+  }
+  /* Carousel indicator bulat hitam */
+  .carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,0.8);
+  }
+  .carousel-indicators .active {
+    background-color: #000;
+  }
+  .rates-section { background: #fff; }
+.res-item { border-bottom: 1px solid #eee; padding-bottom: 0.5rem; }
+
+/* === Panel Room rates Standard room === */
+.select-rooms .room-card[data-room="standard"] .rates-section h5 {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.select-rooms .room-card[data-room="standard"] .rates-section .rate-card {
+  /* spacing & border */
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-color: #e0e0e0;
+}
+
+.select-rooms .room-card[data-room="standard"] .rates-section .rate-card:last-child {
+  /* hilangkan border & spacing di rate terakhir */
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.select-rooms .room-card[data-room="standard"] .rates-section .badge.bg-secondary {
+  font-size: 0.75rem;
+  padding: 0.25em 0.5em;
+}
+
+.select-rooms .room-card[data-room="standard"] .rates-section .text-muted {
+  color: #555;
+}
+
+.select-rooms .room-card[data-room="standard"] .rates-section .fw-semibold {
+  font-weight: 600;
+}
+/* Sidebar reservation items styling */
+.reservation-items .res-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.5rem 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #eee;
+}
+
+.reservation-items .res-item:last-child {
+  border-bottom: none;
+}
+
+.reservation-items .item-label {
+  font-size: 0.95rem;
+}
+
+/* Jika ingin jarak antara promo-section dan items */
+.promo-section {
+  margin-bottom: 1rem;
+}

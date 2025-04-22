@@ -1,0 +1,168 @@
+/* Base */
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+  }
+  
+  /* Hero */
+  .hero {
+    height: 60vh;
+    background: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1920&q=80") center/cover no-repeat;
+  }
+  /* hilangkan overlay hitam */
+  
+  /* Navbar */
+  .navbar {
+    background: transparent !important;
+    z-index: 10;
+  }
+  .nav-link,
+  .navbar-brand {
+    color: #fff !important;
+    transition: color 0.2s;
+  }
+  .nav-link:hover {
+    color: #007bff !important;
+  }
+  
+  /* Booking */
+  .booking {
+    background: #ddd;
+  }
+  .booking .form-control,
+  .booking .dropdown-toggle {
+    border-radius: 0;
+    box-shadow: none;
+    border: 1px solid #ccc;
+    background: #fff;
+  }
+  .booking label {
+    font-style: italic;
+    color: #333;
+  }
+  
+  /* Select rooms */
+  .select-rooms h4 {
+    font-weight: 500;
+  }
+  .select-rooms .card {
+    border: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  /* Welcome */
+  .welcome {
+    background: url("https://images.unsplash.com/photo-1526778548025-fa2f459cd5c0?auto=format&fit=crop&w=1920&q=80") center/cover no-repeat;
+  }
+  .welcome h2 {
+    margin-bottom: 1rem;
+  }
+  .welcome p {
+    line-height: 1.6;
+    max-width: 650px;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #87b5dd;
+  }
+  .footer h6 {
+    font-weight: 600;
+  }
+  .footer a {
+    font-size: 1.2rem;
+  }
+  /* Features Cards Section */
+  .features {
+    position: relative;
+    padding: 5rem 0;
+    background: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1920&q=80")
+                center/cover no-repeat;
+  }
+  /* About Us */
+  .about-us-hero {
+    background: url("/mnt/data/f8394286-ea79-4622-8db6-c47427c16474.png") center/cover no-repeat;
+    height: 300px;
+    position: relative;
+  }
+  
+  .about-us-title {
+    position: absolute;
+    bottom: -20px;
+    left: 15px;
+    border-left: 5px solid #007bff;
+  }
+  
+  .about-us-content {
+    background-color: #f8f9fa;
+  }
+  
+  .about-us-content h3 {
+    border-left: 4px solid #007bff;
+    padding-left: 12px;
+  }
+/* Profile Page */
+.profile-page {
+    background-color: #f8f9fa;
+  }
+  .profile-sidebar .card {
+    border: none;
+  }
+  .profile-sidebar .avatar {
+    width: 80px;
+    height: 80px;
+    font-size: 1.5rem;
+    color: #555;
+  }
+  .profile-content .card {
+    border: none;
+    border-radius: .5rem;
+  }
+  .profile-content .card-header {
+    background: none;
+  }
+  .profile-content .nav-tabs .nav-link.active {
+    color: #0d6efd;
+    border-bottom: 3px solid #0d6efd;
+  }
+/* Return link */
+.return-link {
+    color: #333;
+    font-weight: 500;
+    margin-bottom: .5rem;
+  }
+  .return-link:hover {
+    color: #0d6efd;
+    text-decoration: none;
+  }
+  
+  /* Page title */
+  .profile-page h1 {
+    font-size: 1.75rem;
+  }
+  
+  /* Sidebar title “Profile” */
+  .profile-sidebar h2 {
+    font-family: serif;
+    font-size: 1.5rem;
+  }
+/* Nav‑tabs: abu‑abu saat inactive, biru saat active/hover */
+.nav-tabs .nav-link {
+    color: #6c757d;           /* abu‑abu bootstrap */
+    transition: color .2s;
+  }
+  .nav-tabs .nav-link:hover {
+    color: #0d6efd;           /* biru bootstrap */
+  }
+  .nav-tabs .nav-link.active {
+    color: #0d6efd !important;  /* paksa biru untuk active */
+  }
+  
+  /* Warna Data Pribadi: biru saat pane show, abu saat tidak */
+  .tab-pane.show .card-title {
+    color: #0d6efd;           /* biru */
+  }
+  .tab-pane:not(.show) .card-title {
+    color: #6c757d;           /* abu */
+  }
+        

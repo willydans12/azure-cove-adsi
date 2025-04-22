@@ -1,0 +1,103 @@
+/* Base */
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Hero */
+.hero {
+  height: 60vh;
+  background: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1920&q=80") center/cover no-repeat;
+}
+/* hilangkan overlay hitam */
+
+/* Navbar */
+.navbar {
+  background: transparent !important;
+  z-index: 10;
+}
+.nav-link,
+.navbar-brand {
+  color: #fff !important;
+  transition: color 0.2s;
+}
+.nav-link:hover {
+  color: #007bff !important;
+}
+
+/* Booking */
+.booking {
+  background: #ddd;
+}
+.booking .form-control,
+.booking .dropdown-toggle {
+  border-radius: 0;
+  box-shadow: none;
+  border: 1px solid #ccc;
+  background: #fff;
+}
+.booking label {
+  font-style: italic;
+  color: #333;
+}
+
+/* Select rooms */
+.select-rooms h4 {
+  font-weight: 500;
+}
+.select-rooms .card {
+  border: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Welcome */
+.welcome {
+  background: url("https://images.unsplash.com/photo-1526778548025-fa2f459cd5c0?auto=format&fit=crop&w=1920&q=80") center/cover no-repeat;
+}
+.welcome h2 {
+  margin-bottom: 1rem;
+}
+.welcome p {
+  line-height: 1.6;
+  max-width: 650px;
+}
+
+/* Footer */
+.footer {
+  background-color: #87b5dd;
+}
+.footer h6 {
+  font-weight: 600;
+}
+.footer a {
+  font-size: 1.2rem;
+}
+/* Features Cards Section */
+.features {
+  position: relative;
+  padding: 5rem 0;
+  background: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1920&q=80")
+              center/cover no-repeat;
+}
+/* About Us */
+.about-us-hero {
+  background: url("/mnt/data/f8394286-ea79-4622-8db6-c47427c16474.png") center/cover no-repeat;
+  height: 300px;
+  position: relative;
+}
+
+.about-us-title {
+  position: absolute;
+  bottom: -20px;
+  left: 15px;
+  border-left: 5px solid #007bff;
+}
+
+.about-us-content {
+  background-color: #f8f9fa;
+}
+
+.about-us-content h3 {
+  border-left: 4px solid #007bff;
+  padding-left: 12px;
+}

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Azure Cove Resort</title>
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <!-- Daterangepicker CSS -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"
+  />
+  <!-- FontAwesome -->
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    rel="stylesheet"
+  />
+  <!-- Custom CSS -->
+  <link href="activity.css" rel="stylesheet" />
+
+</head>
+<body>
+  <!-- Header / Hero -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light position-absolute w-100 px-4">
+      <a class="navbar-brand text-white d-flex align-items-center" href="index.html">
+        <i class="fas fa-umbrella-beach fa-lg me-2"></i>
+        <div>
+          <a href="index.html" class="h5 mb-0 text-white text-decoration-none">Azure Cove</a>
+          <small class="text-white-50">A&amp;C Resort</small>
+        </div>
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navMenu"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+        <ul class="navbar-nav align-items-center">
+          <li class="nav-item mx-3"><a class="nav-link" href="booking.html">Book a Room</a></li>
+          <li class="nav-item mx-3"><a class="nav-link" href="about us.html">About Us</a></li>
+          <li class="nav-item mx-3"><a class="nav-link" href="activity.html">Activities</a></li>
+          <li class="nav-item mx-3"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item mx-3"><a class="nav-link" href="profile.html">Profile</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="hero d-flex justify-content-center align-items-center"></div>
+  </header>
+
+  <section class="activities-page py-5">
+    <div class="container">
+      <!-- Judul -->
+      <div class="row mb-4">
+        <div class="col-12">
+          <div class="bg-white p-4 shadow-sm activity-title-box">
+            <h2 class="text-primary mb-0">Activities</h2>
+          </div>
+        </div>
+      </div>
+      <!-- Deskripsi -->
+      <div class="row mb-5">
+        <div class="col-12">
+          <div class="bg-white p-4 shadow-sm activity-desc-box">
+            <p class="fst-italic text-secondary mb-0">
+              🏖️ <strong>Bermain di Pantai</strong> – Rasakan kesegaran air laut dengan berenang, berselancar, atau sekadar menikmati matahari di pasir putih yang lembut.<br>
+              🚴‍♂️ <strong>Jelajah Alam</strong> – Nikmati perjalanan bersepeda di sepanjang pesisir pantai dan jelajahi keindahan alam sekitar dengan udara laut yang menyegarkan.<br>
+              🏊‍♂️ <strong>Santai di Kolam Renang</strong> – Bersantailah di tepi kolam infinity kami yang menghadap langsung ke laut, sempurna untuk melepas penat.<br>
+              🌅 <strong>Romantis di Senja</strong> – Nikmati pemandangan matahari terbenam yang memukau sambil bersantai di dermaga kayu atau menikmati makan malam romantis di tepi pantai.<br>
+              Temukan pengalaman tak terlupakan di Azure Cove Resort! 🎉✨
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Galeri dengan hover & lightbox trigger -->
+      <div class="row row-cols-1 row-cols-md-2 g-2 gallery-grid">
+        <!-- loop item 0..5 -->
+        <div class="col">
+          <div
+            class="ratio ratio-1x1 overflow-hidden rounded position-relative gallery-item"
+            data-index="0"
+            data-title="Bermain di Pantai"
+            data-desc="Sensasi ombak, pasir putih, dan matahari terbenam."
+          >
+            <img
+              src="https://s-light.tiket.photos/t/01E25EBZS3W0FY9GTG6C42E1SE/rsfit720360gsm/tix-hotel/images-web/2021/08/23/39ac6624-e76f-49dc-891b-ccace406ab80-1629700239175-292f61a1e76ea9bfea39c3c2ee5f7bbb.jpg"
+              alt=""
+              class="w-100 h-100"
+            >
+            <div class="overlay d-flex flex-column justify-content-center align-items-center text-center p-3">
+              <h5 class="mb-1">Bermain di Pantai</h5>
+              <p class="small mb-0">Sensasi ombak, pasir putih, dan matahari terbenam.</p>
+            </div>
+          </div>
+        </div>
+        <!-- item 1 -->
+        <div class="col">
+          <div
+            class="ratio ratio-1x1 overflow-hidden rounded position-relative gallery-item"
+            data-index="1"
+            data-title="Jelajah Alam"
+            data-desc="Rute pesisir dengan pemandangan hijau yang asri."
+          >
+            <img
+              src="https://s-light.tiket.photos/t/01E25EBZS3W0FY9GTG6C42E1SE/rsfit720360gsm/tix-hotel/images-web/2022/11/18/040d5b5c-9dbc-4833-a0dc-1bef22465f41-1668741341223-69cdfb17867b42a95147e2f7a8308a18.jpg"
+              alt=""
+              class="w-100 h-100"
+            >
+            <div class="overlay d-flex flex-column justify-content-center align-items-center text-center p-3">
+              <h5 class="mb-1">Jelajah Alam</h5>
+              <p class="small mb-0">Rute pesisir dengan pemandangan hijau yang asri.</p>
+            </div>
+          </div>
+        </div>
+        <!-- item 2 -->
+        <div class="col">
+          <div
+            class="ratio ratio-1x1 overflow-hidden rounded position-relative gallery-item"
+            data-index="2"
+            data-title="Santai di Kolam"
+            data-desc="Infinity pool menghadap langsung ke laut biru."
+          >
+            <img
+              src="https://s-light.tiket.photos/t/01E25EBZS3W0FY9GTG6C42E1SE/rsfit720360gsm/tix-hotel/images-web/2020/11/16/774ba393-e181-4da7-8635-ba3360b6f0f7-1605544897046-c6e7960bcd162a93b0f5e1ecc3fc19ea.jpg"
+              alt=""
+              class="w-100 h-100"
+            >
+            <div class="overlay d-flex flex-column justify-content-center align-items-center text-center p-3">
+              <h5 class="mb-1">Santai di Kolam</h5>
+              <p class="small mb-0">Infinity pool menghadap langsung ke laut biru.</p>
+            </div>
+          </div>
+        </div>
+        <!-- item 3 -->
+        <div class="col">
+          <div
+            class="ratio ratio-1x1 overflow-hidden rounded position-relative gallery-item"
+            data-index="3"
+            data-title="Romantis di Senja"
+            data-desc="Suasana sunset yang memukau di dermaga kayu."
+          >
+            <img
+              src="https://s-light.tiket.photos/t/01E25EBZS3W0FY9GTG6C42E1SE/rsfit720360gsm/tix-hotel/images-web/2020/11/16/b07ede31-374f-4050-9ad9-6d8c0f152f61-1605544905614-0973f6ea63c1a6e9300b9f4d862f52fb.jpg"
+              alt=""
+              class="w-100 h-100"
+            >
+            <div class="overlay d-flex flex-column justify-content-center align-items-center text-center p-3">
+              <h5 class="mb-1">Romantis di Senja</h5>
+              <p class="small mb-0">Suasana sunset yang memukau di dermaga kayu.</p>
+            </div>
+          </div>
+        </div>
+        <!-- item 4 -->
+        <div class="col">
+          <div
+            class="ratio ratio-1x1 overflow-hidden rounded position-relative gallery-item"
+            data-index="4"
+            data-title="Spa Outdoor"
+            data-desc="Relaksasi dengan pijat sambil menikmati angin laut."
+          >
+            <img
+              src="https://s-light.tiket.photos/t/01E25EBZS3W0FY9GTG6C42E1SE/rsfit720360gsm/tix-hotel/images-web/2020/11/16/054ec193-5180-46e1-8b8e-8bad707b647d-1605544904365-374390a91ce5b4b3132a517c852e2d7c.jpg"
+              alt=""
+              class="w-100 h-100"
+            >
+            <div class="overlay d-flex flex-column justify-content-center align-items-center text-center p-3">
+              <h5 class="mb-1">Spa Outdoor</h5>
+              <p class="small mb-0">Relaksasi dengan pijat sambil menikmati angin laut.</p>
+            </div>
+          </div>
+        </div>
+        <!-- item 5 -->
+        <div class="col">
+          <div
+            class="ratio ratio-1x1 overflow-hidden rounded position-relative gallery-item"
+            data-index="5"
+            data-title="Kuliner Laut"
+            data-desc="Menu seafood segar dengan view pantai."
+          >
+            <img
+              src="https://s-light.tiket.photos/t/01E25EBZS3W0FY9GTG6C42E1SE/rsfit720360gsm/tix-hotel/images-web/2022/08/17/5716ede7-17e6-46c5-a629-6a4fab20ef85-1660711867128-be908fb56d42517933f9b9e99f1436a1.jpg"
+              alt=""
+              class="w-100 h-100"
+            >
+            <div class="overlay d-flex flex-column justify-content-center align-items-center text-center p-3">
+              <h5 class="mb-1">Kuliner Laut</h5>
+              <p class="small mb-0">Menu seafood segar dengan view pantai.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Overlay -->
+  <div id="lightbox" class="d-none">
+    <div class="lightbox-content shadow">
+      <button class="btn-close-lightbox">&larr; Back</button>
+      <div class="lightbox-body">
+        <div class="lb-image">
+          <img src="" alt="">
+        </div>
+        <div class="lb-info">
+          <h3 class="lb-title"></h3>
+          <p class="lb-desc"></p>
+          <div class="d-flex gap-2 mt-3">
+            <button class="btn btn-secondary lb-prev">Prev</button>
+            <button class="btn btn-secondary lb-next">Next</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer text-white py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <h6>Call us now to book</h6>
+          <p class="h5">1-800-000-0000</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <h6>Follow us</h6>
+          <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="col-md-4 text-end">
+          <small>© 2025 by Azure Cove Resort</small>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/moment@2.29.4/moment.min.js"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+  ></script>
+  <script>
+    $(function(){
+      const items = $('.gallery-item');
+      const lightbox = $('#lightbox');
+      const lbImage = lightbox.find('img');
+      const lbTitle = lightbox.find('.lb-title');
+      const lbDesc  = lightbox.find('.lb-desc');
+      let currentIndex = 0;
+
+      function showLightbox(idx){
+        const el = items.filter(`[data-index="${idx}"]`);
+        lbImage.attr('src', el.find('img').attr('src'));
+        lbTitle.text(el.data('title'));
+        lbDesc.text(el.data('desc'));
+        currentIndex = idx;
+        lightbox.removeClass('d-none');
+      }
+      function hideLightbox(){
+        lightbox.addClass('d-none');
+      }
+      function gotoNext(){
+        showLightbox((currentIndex + 1) % items.length);
+      }
+      function gotoPrev(){
+        showLightbox((currentIndex - 1 + items.length) % items.length);
+      }
+
+      items.on('click', function(){
+        showLightbox(parseInt($(this).data('index')));
+      });
+      lightbox.find('.btn-close-lightbox').on('click', hideLightbox);
+      lightbox.find('.lb-next').on('click', gotoNext);
+      lightbox.find('.lb-prev').on('click', gotoPrev);
+      lightbox.on('click', e => { if (e.target === e.currentTarget) hideLightbox(); });
+    });
+  </script>
+</body>
+</html>

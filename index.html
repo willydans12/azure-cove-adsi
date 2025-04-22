@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Azure Cove Resort</title>
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <!-- Daterangepicker CSS -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"
+  />
+  <!-- FontAwesome -->
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    rel="stylesheet"
+  />
+  <!-- Custom CSS -->
+  <link href="home.css" rel="stylesheet" />
+</head>
+<body>
+  <!-- Header / Hero -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light position-absolute w-100 px-4">
+      <a class="navbar-brand text-white d-flex align-items-center" href="index.html">
+        <i class="fas fa-umbrella-beach fa-lg me-2"></i>
+        <div>
+          <div<a href="index.html" class="h5 mb-0 text-white text-decoration-none">Azure Cove</a>
+        <small class="text-white-50">A&amp;C Resort</small>
+      </div>
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navMenu"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+        <ul class="navbar-nav align-items-center">
+          <li class="nav-item mx-3"><a class="nav-link" href="booking.html">Book a Room</a></li>
+          <li class="nav-item mx-3"><a class="nav-link" href="about us.html">About Us</a></li>
+          <li class="nav-item mx-3"><a class="nav-link" href="activity.html">Activities</a></li>
+          <li class="nav-item mx-3"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item mx-3"><a class="nav-link" href="profile.html">Profile</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="hero d-flex justify-content-center align-items-center">
+      <!-- bg image di CSS -->
+    </div>
+  </header>
+
+  <!-- Booking Form -->
+  <section class="booking bg-light py-5">
+    <div class="container">
+      <div class="row justify-content-center gx-3 gy-2 align-items-end">
+        <!-- Date range -->
+        <div class="col-md-3">
+          <label class="form-label fst-italic">Check‑in and check‑out</label>
+          <input
+            type="text"
+            class="form-control"
+            id="daterange"
+            readonly
+          />
+        </div>
+        <!-- Rooms & guests -->
+        <div class="col-md-3">
+          <label class="form-label fst-italic">Rooms and guests</label>
+          <div class="dropdown">
+            <button
+              class="form-control text-start dropdown-toggle"
+              id="roomsDropdown"
+              data-bs-toggle="dropdown"
+              data-bs-auto-close="outside"
+            >
+              <span id="roomsSummary">1 room, 2 adults</span>
+            </button>
+            <ul
+              class="dropdown-menu p-3"
+              aria-labelledby="roomsDropdown"
+              style="min-width: 300px;"
+            >
+              <!-- Room count -->
+              <li class="d-flex justify-content-between align-items-center mb-3">
+                <span><strong>Rooms</strong></span>
+                <div class="d-flex align-items-center">
+                  <button class="btn btn-outline-secondary btn-sm me-2" id="room-decrease">−</button>
+                  <span id="room-count">1</span>
+                  <button class="btn btn-outline-secondary btn-sm ms-2" id="room-increase">+</button>
+                </div>
+              </li>
+              <!-- Adults count -->
+              <li class="d-flex justify-content-between align-items-center mb-3">
+                <span><strong>Adults</strong></span>
+                <div class="d-flex align-items-center">
+                  <button class="btn btn-outline-secondary btn-sm me-2" id="adult-decrease">−</button>
+                  <span id="adult-count">2</span>
+                  <button class="btn btn-outline-secondary btn-sm ms-2" id="adult-increase">+</button>
+                </div>
+              </li>
+              <li class="d-flex justify-content-end">
+                <button class="btn btn-primary btn-sm" data-bs-dismiss="dropdown">Close</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Search button -->
+        <div class="col-md-2 d-grid">
+          <button class="btn btn-primary">Search</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Welcome -->
+  <section class="welcome text-center py-5">
+    <div class="container">
+      <h2 class="display-6 text-primary">Welcome</h2>
+      <p class="fst-italic mx-auto text-primary" style="max-width:600px;">
+        Selamat datang di azure cove resort, tempat di mana kenyamanan dan kemewahan bertemu dalam satu pengalaman menginap yang tak terlupakan. Nikmati suasana yang menenangkan dengan pemandangan alam yang indah, layanan terbaik, serta fasilitas lengkap untuk memenuhi segala kebutuhan Anda. Kami siap memberikan pengalaman menginap terbaik bagi Anda dan keluarga.
+      </p>
+    </div>
+  </section>
+
+  <!-- Features Cards (Activities / Rooms / Location) -->
+  <section class="features py-5">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Activities -->
+        <div class="col-md-4">
+          <div class="card h-100">
+            <div class="card-body text-center">
+              <h5 class="card-title text-primary">Activities</h5>
+              <p class="card-text fst-italic">
+                Temukan berbagai aktivitas menarik selama menginap di azure cove resort. Dari olahraga air yang seru, petualangan alam yang mendebarkan, hingga aktivitas relaksasi seperti spa dan yoga, semua tersedia untuk melengkapi liburan Anda. Jelajahi keindahan sekitar dan buat kenangan yang tak terlupakan bersama kami.
+              </p>
+              <a href="#" class="stretched-link text-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+        <!-- Rooms -->
+        <div class="col-md-4">
+          <div class="card h-100">
+            <div class="card-body text-center">
+              <h5 class="card-title text-primary">Rooms</h5>
+              <p class="card-text fst-italic">
+                Nikmati kenyamanan istirahat di kamar-kamar eksklusif kami yang dirancang dengan elegan dan dilengkapi dengan fasilitas modern. Dari kamar standar yang nyaman hingga suite mewah dengan pemandangan menakjubkan, kami menyediakan pilihan terbaik untuk memenuhi kebutuhan Anda. Rasakan suasana hangat dan layanan istimewa hanya di azure cove resort.
+              </p>
+              <a href="#" class="stretched-link text-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+        <!-- Location -->
+        <div class="col-md-4">
+          <div class="card h-100">
+            <div class="card-body text-center">
+              <h5 class="card-title text-primary">Location</h5>
+              <p class="card-text fst-italic">
+                Terletak di lokasi strategis, azure cove resort menawarkan akses mudah ke berbagai destinasi menarik di sekitar. Dikelilingi pemandangan alam yang indah, hotel kami menjadi tempat sempurna untuk bersantai dan menjelajahi pesona sekitar. Temukan pengalaman menginap yang tak hanya nyaman, tetapi juga penuh petualangan.
+              </p>
+              <a href="#" class="stretched-link text-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer text-white py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <h6>Call us now to book</h6>
+          <p class="h5">1-800-000-0000</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <h6>Follow us</h6>
+          <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="col-md-4 text-end">
+          <small>© 2025 by Azure Cove Resort</small>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/moment@2.29.4/moment.min.js"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+  ></script>
+  <script src="home.js"></script>
+</body>
+</html>
