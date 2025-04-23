@@ -5,9 +5,10 @@ body {
   }
   
   /* Hero */
+ /* Hero */
   .hero {
     height: 60vh;
-    background: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1920&q=80") center/cover no-repeat;
+    background: url("file:///C:/Users/user/Downloads/id.hotels.com_files/3d6435f4(1).jpg") center/cover no-repeat;
   }
   /* hilangkan overlay hitam */
   
