@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Hotel</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+    .sidebar {
+      width: 250px;
+      height: 100vh;
+      background-color: #fff;
+      border-right: 1px solid #dee2e6;
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding-top: 1rem;
+    }
+    .sidebar a {
+      padding: 0.75rem 1rem;
+      display: block;
+      color: #000;
+      text-decoration: none;
+    }
+    .sidebar a.active, .sidebar a:hover {
+      background-color: #e9ecef;
+      font-weight: 500;
+    }
+    .content {
+      margin-left: 250px;
+      padding: 2rem;
+    }
+    .card-info {
+      border-radius: 1rem;
+    }
+    .status-pill {
+      padding: 0.25rem 0.5rem;
+      border-radius: 0.5rem;
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: white;
+    }
+    .status-checkin { background-color: #28a745; }
+    .status-checkout { background-color: #ffc107; color: black; }
+    .status-terjadwal { background-color: #6f42c1; }
+    .badge-payment { font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <div class="text-center mb-4">
+      <img src="https://img.icons8.com/ios-filled/50/000000/hotel.png" height="40"/>
+    </div>
+    <a href="#" class="active">Dashboard</a>
+    <a href="#">Check-in/Check-out</a>
+    <a href="#">Manajemen Kamar</a>
+    <a href="#">Konfirmasi Reservasi</a>
+    <a href="#">Laporan</a>
+    <a href="#">Pengaturan</a>
+  </div>
+  <div class="content">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <div>
+        <h5>Dashboard</h5>
+        <p class="text-muted">Selamat datang kembali, Anita! Berikut ringkasan aktivitas hotel hari ini.</p>
+      </div>
+      <div class="d-flex align-items-center">
+        <img src="https://img.icons8.com/color/36/user.png" class="me-2 rounded-circle"/>
+        <span>Anita Wijaya <small class="text-muted">Resepsionis</small></span>
+      </div>
+    </div>
+
+    <div class="row g-3 mb-4">
+      <div class="col-md-3">
+        <div class="card card-info p-3 shadow-sm">
+          <div class="text-muted">Check-in Hari Ini</div>
+          <h4>24 <small class="text-success">↑12%</small></h4>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card card-info p-3 shadow-sm">
+          <div class="text-muted">Kamar Tersedia</div>
+          <h4>42 <small class="text-danger">↓8%</small></h4>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card card-info p-3 shadow-sm">
+          <div class="text-muted">Reservasi Pending</div>
+          <h4>16 <small class="text-success">↑24%</small></h4>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card card-info p-3 shadow-sm">
+          <div class="text-muted">Pendapatan Hari Ini</div>
+          <h4>Rp 14,5 jt <small class="text-success">↑18%</small></h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header d-flex justify-content-between align-items-center">
+        <h6 class="mb-0">Manajemen Tamu</h6>
+        <button class="btn btn-primary btn-sm">+ Check-in Baru</button>
+      </div>
+      <div class="card-body p-0">
+        <table class="table table-striped table-hover">
+          <thead>
+            <tr>
+              <th>Nama Tamu</th>
+              <th>No. Kamar</th>
+              <th>Status</th>
+              <th>Check-in</th>
+              <th>Check-out</th>
+              <th>Pembayaran</th>
+              <th>Aksi</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Budi Wicaksono<br><small class="text-muted">0812-3456-7890</small></td>
+              <td>301</td>
+              <td><span class="status-pill status-checkin">Check-in</span></td>
+              <td>23 Apr 2025, 14:30</td>
+              <td>25 Apr 2025, 12:00</td>
+              <td><span class="badge bg-success badge-payment">Lunas</span></td>
+              <td>
+                <button class="btn btn-sm btn-outline-primary"><i class="bi bi-eye"></i></button>
+                <button class="btn btn-sm btn-outline-warning"><i class="bi bi-pencil"></i></button>
+                <button class="btn btn-sm btn-outline-danger"><i class="bi bi-trash"></i></button>
+              </td>
+            </tr>
+            <tr>
+              <td>Siti Maryam<br><small class="text-muted">0856-7890-1234</small></td>
+              <td>205</td>
+              <td><span class="status-pill status-checkin">Check-in</span></td>
+              <td>22 Apr 2025, 15:40</td>
+              <td>24 Apr 2025, 12:00</td>
+              <td><span class="badge bg-success badge-payment">Lunas</span></td>
+              <td>
+                <button class="btn btn-sm btn-outline-primary"><i class="bi bi-eye"></i></button>
+                <button class="btn btn-sm btn-outline-warning"><i class="bi bi-pencil"></i></button>
+                <button class="btn btn-sm btn-outline-danger"><i class="bi bi-trash"></i></button>
+              </td>
+            </tr>
+            <tr>
+              <td>Dimas Pratama<br><small class="text-muted">0878-9012-3456</small></td>
+              <td>118</td>
+              <td><span class="status-pill status-checkout">Akan Check-out</span></td>
+              <td>21 Apr 2025, 13:00</td>
+              <td>23 Apr 2025, 12:00</td>
+              <td><span class="badge bg-warning text-dark badge-payment">DP 50%</span></td>
+              <td>
+                <button class="btn btn-sm btn-outline-primary"><i class="bi bi-eye"></i></button>
+                <button class="btn btn-sm btn-outline-warning"><i class="bi bi-pencil"></i></button>
+                <button class="btn btn-sm btn-outline-danger"><i class="bi bi-trash"></i></button>
+              </td>
+            </tr>
+            <tr>
+              <td>Ratna Sari<br><small class="text-muted">0899-4567-8910</small></td>
+              <td>206</td>
+              <td><span class="status-pill status-checkin">Check-in</span></td>
+              <td>23 Apr 2025, 10:15</td>
+              <td>26 Apr 2025, 12:00</td>
+              <td><span class="badge bg-warning text-dark badge-payment">DP 50%</span></td>
+              <td>
+                <button class="btn btn-sm btn-outline-primary"><i class="bi bi-eye"></i></button>
+                <button class="btn btn-sm btn-outline-warning"><i class="bi bi-pencil"></i></button>
+                <button class="btn btn-sm btn-outline-danger"><i class="bi bi-trash"></i></button>
+              </td>
+            </tr>
+            <tr>
+              <td>Hendra Setiawan<br><small class="text-muted">0821-5678-9012</small></td>
+              <td>207</td>
+              <td><span class="status-pill status-terjadwal">Terjadwal</span></td>
+              <td>25 Apr 2025, 10:55</td>
+              <td>25 Apr 2025, 12:00</td>
+              <td><span class="badge bg-warning text-dark badge-payment">DP 30%</span></td>
+              <td>
+                <button class="btn btn-sm btn-outline-primary"><i class="bi bi-eye"></i></button>
+                <button class="btn btn-sm btn-outline-warning"><i class="bi bi-pencil"></i></button>
+                <button class="btn btn-sm btn-outline-danger"><i class="bi bi-trash"></i></button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
