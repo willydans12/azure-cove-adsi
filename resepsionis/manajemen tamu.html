@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manajemen Tamu</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      display: flex;
+      background-color: #f9fafb;
+    }
+
+    aside {
+      width: 220px;
+      background-color: #fff;
+      height: 100vh;
+      padding: 20px 0;
+      box-shadow: 1px 0 5px rgba(0,0,0,0.1);
+    }
+
+    aside ul {
+      list-style: none;
+    }
+
+    aside li {
+      padding: 12px 24px;
+      color: #333;
+      cursor: pointer;
+    }
+
+    aside li:hover, aside .active {
+      background-color: #007bff;
+      color: white;
+      border-radius: 6px;
+    }
+
+    main {
+      flex: 1;
+      padding: 24px;
+    }
+
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .topbar h2 {
+      font-size: 20px;
+    }
+
+    .topbar .user {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .user img {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+    }
+
+    .filters {
+      margin-top: 20px;
+      display: flex;
+      gap: 12px;
+    }
+
+    .filters input, .filters select {
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    .filters button {
+      padding: 8px 16px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    table {
+      width: 100%;
+      margin-top: 20px;
+      border-collapse: collapse;
+      background-color: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 14px 16px;
+      border-bottom: 1px solid #eee;
+      font-size: 14px;
+    }
+
+    th {
+      background-color: #f0f4f8;
+      font-weight: bold;
+    }
+
+    .badge {
+      padding: 4px 10px;
+      border-radius: 12px;
+      font-size: 12px;
+      display: inline-block;
+    }
+
+    .checkin {
+      background-color: #d1fae5;
+      color: #047857;
+    }
+
+    .checkout {
+      background-color: #fef3c7;
+      color: #b45309;
+    }
+
+    .tejadwal {
+      background-color: #e0e7ff;
+      color: #3730a3;
+    }
+
+    .lunas {
+      background-color: #e0f2fe;
+      color: #0284c7;
+    }
+
+    .dp {
+      background-color: #fef9c3;
+      color: #b45309;
+    }
+
+    .actions button {
+      border: none;
+      background: none;
+      cursor: pointer;
+      font-size: 16px;
+      margin-right: 8px;
+    }
+
+    .pagination {
+      margin-top: 10px;
+      display: flex;
+      justify-content: flex-end;
+      gap: 6px;
+    }
+
+    .pagination button {
+      padding: 4px 10px;
+      border: 1px solid #ccc;
+      background-color: white;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .pagination .active {
+      background-color: #007bff;
+      color: white;
+      border-color: #007bff;
+    }
+  </style>
+</head>
+<body>
+  <aside>
+    <ul>
+      <li>Dashboard</li>
+      <li class="active">Manajemen Tamu</li>
+      <li>Manajemen Kamar</li>
+      <li>Konfirmasi Reservasi</li>
+      <li>Laporan</li>
+      <li>Pengaturan</li>
+    </ul>
+  </aside>
+
+  <main>
+    <div class="topbar">
+      <h2>Manajemen Tamu</h2>
+      <div class="user">
+        <span>Anita Wijaya</span>
+        <img src="https://i.pravatar.cc/40" alt="User">
+        <button style="background-color: #007bff; color:white; padding: 6px 12px; border:none; border-radius:6px;">+ Tambah Tamu Baru</button>
+      </div>
+    </div>
+
+    <p style="margin-top: 8px; color: #555;">Kelola data tamu, check-in, dan check-out</p>
+
+    <div class="filters">
+      <input type="text" placeholder="Cari nama tamu, no. kamar, atau ID...">
+      <select>
+        <option>Semua Status</option>
+      </select>
+      <select>
+        <option>Semua Tipe Kamar</option>
+      </select>
+      <input type="date">
+      <button>Reset</button>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Nama Tamu</th>
+          <th>No. Kamar</th>
+          <th>Tipe Kamar</th>
+          <th>Status</th>
+          <th>Check-in</th>
+          <th>Check-out</th>
+          <th>Pembayaran</th>
+          <th>Aksi</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Budi Wicaksono<br><small>+62 812-3456-7890</small></td>
+          <td>301</td>
+          <td>Deluxe Double</td>
+          <td><span class="badge checkin">Check-in</span></td>
+          <td>23 Apr 2025, 14:30</td>
+          <td>25 Apr 2025, 12:00</td>
+          <td><span class="badge lunas">Lunas</span></td>
+          <td class="actions">✏️ 🗑️</td>
+        </tr>
+        <tr>
+          <td>Siti Maryam<br><small>+62 821-1234-6078</small></td>
+          <td>205</td>
+          <td>Standard Twin</td>
+          <td><span class="badge checkin">Check-in</span></td>
+          <td>22 Apr 2025, 15:45</td>
+          <td>24 Apr 2025, 12:00</td>
+          <td><span class="badge lunas">Lunas</span></td>
+          <td class="actions">✏️ 🗑️</td>
+        </tr>
+        <tr>
+          <td>Dimas Pratama<br><small>+62 878-9012-3456</small></td>
+          <td>118</td>
+          <td>Standard Double</td>
+          <td><span class="badge checkout">Akan Check-out</span></td>
+          <td>23 Apr 2025, 13:20</td>
+          <td>25 Apr 2025, 12:00</td>
+          <td><span class="badge dp">DP 50%</span></td>
+          <td class="actions">✏️ 🗑️</td>
+        </tr>
+        <tr>
+          <td>Ratna Sari<br><small>+62 812-3456-7891</small></td>
+          <td>412</td>
+          <td>Suite</td>
+          <td><span class="badge checkin">Check-in</span></td>
+          <td>23 Apr 2025, 10:15</td>
+          <td>26 Apr 2025, 12:00</td>
+          <td><span class="badge dp">DP 50%</span></td>
+          <td class="actions">✏️ 🗑️</td>
+        </tr>
+        <tr>
+          <td>Hendra Setiawan<br><small>+62 896-5432-1908</small></td>
+          <td>207</td>
+          <td>Deluxe Twin</td>
+          <td><span class="badge tejadwal">Terjadwal</span></td>
+          <td>23 Apr 2025, 15:00</td>
+          <td>25 Apr 2025, 12:00</td>
+          <td><span class="badge dp">DP 30%</span></td>
+          <td class="actions">✏️ 🗑️</td>
+        </tr>
+        <tr>
+          <td>Nurul Aini<br><small>+62 888-1234-9090</small></td>
+          <td>315</td>
+          <td>Deluxe Double</td>
+          <td><span class="badge checkin">Check-in</span></td>
+          <td>23 Apr 2025, 16:20</td>
+          <td>25 Apr 2025, 12:00</td>
+          <td><span class="badge lunas">Lunas</span></td>
+          <td class="actions">✏️ 🗑️</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="pagination">
+      <button>&lt;</button>
+      <button class="active">1</button>
+      <button>2</button>
+      <button>&gt;</button>
+    </div>
+  </main>
+</body>
+</html>
