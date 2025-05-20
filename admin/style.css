@@ -1,0 +1,94 @@
+/* Custom tweaks */
+#wrapper {
+  min-height: 100vh;
+}
+/* Sidebar Custom */
+#sidebar-wrapper {
+  width: 240px;
+}
+.nav-link {
+  color: #495057;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+}
+.nav-link i {
+  font-size: 1.1rem;
+}
+.nav-link.active,
+.nav-link:hover {
+  background-color: #e7f1ff;
+  color: #0d6efd;
+}
+.nav-link.active i,
+.nav-link:hover i {
+  color: #0d6efd;
+}
+.avatar-circle {
+  width: 36px;
+  height: 36px;
+  background: #0d6efd;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+/* Khusus halaman akun */
+#search-input { min-width: 200px; }
+#accounts-table img { width: 32px; height: 32px; border-radius: 50%; object-fit: cover; }
+.badge-status { font-size: 0.9rem; padding: 0.4em 0.6em; }
+.badge-Aktif { background-color: #d4edda; color: #155724; }
+.badge-Nonaktif { background-color: #f8d7da; color: #721c24; }
+
+/* General Styles */
+body {
+  font-family: 'Segoe UI', sans-serif;
+}
+/* Wrapper Tweaks */
+#lap-wrapper {
+  min-height: 100vh;
+}
+/* Sidebar Custom (Laporan) */
+#lap-sidebar-wrapper {
+  width: 240px;
+}
+.lap-nav-link {
+  color: #495057;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+}
+.lap-nav-link i {
+  font-size: 1.1rem;
+}
+.lap-nav-link.active,
+.lap-nav-link:hover {
+  background-color: #e7f1ff;
+  color: #0d6efd;
+}
+.lap-nav-link.active i,
+.lap-nav-link:hover i {
+  color: #0d6efd;
+}
+.avatar-lap-circle {
+  width: 36px;
+  height: 36px;
+  background: #0d6efd;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+/* Search & Accounts Table (Laporan) */
+#lap-search-input { min-width: 200px; }
+#lap-accounts-table img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.lap-badge-status { font-size: 0.9rem; padding: 0.4em 0.6em; }
+.lap-badge-Aktif { background-color: #d4edda; color: #155724; }
+.lap-badge-Nonaktif { background-color: #f8d7da; color: #721c24; }
